@@ -1,6 +1,6 @@
 <!-- AlissonJSB4 | Computer Engineering Student & Published Researcher -->
 
-<h1 align="center">Hi, I'm Alisson Barbosa 👋</h1>
+<h1 align="center">Hi, I'm Alisson Jaime 👋</h1>
 <p align="center">
   <b>Published Researcher in Digital Design & Circuit Reliability</b><br>
   <b>Verilog, SystemVerilog, FPGAs | On-Chip Sensors & Silicon Lifecycle Management (SLM)</b>
