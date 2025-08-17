@@ -53,3 +53,5 @@ Low-Level Software & Tools: x86 Assembly, C++, Git, Linux Environment, Makefiles
 Key Concepts: HW/SW Co-design, Digital Verification, Circuit Reliability, On-Chip Sensors
 
 📫 Let's Connect!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/alissonjsb4-utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
