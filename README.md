@@ -1,67 +1,55 @@
-<!-- AlissonJSB4 | Computer Engineering Student & Published Researcher -->
-
 <h1 align="center">Hi, I'm Alisson Jaime 👋</h1>
 <p align="center">
-  <b>Published Researcher in Digital Design & Circuit Reliability</b><br>
-  <b>Verilog, SystemVerilog, FPGAs | On-Chip Sensors & Silicon Lifecycle Management (SLM)</b>
+Computer Engineering Student passionate about the intersection of hardware and software.
 </p>
 
----
+👨‍💻 About Me
+I'm a Computer Engineering student at the Federal University of Ceará (UFC) with a deep interest in building robust and efficient systems from the ground up. My passion lies in understanding the full stack, from designing digital logic in Verilog to writing low-level operating system code in Assembly. I am driven by the challenge of creating technology that is both powerful and reliable.
 
-## 🏆 Major Achievement
+🚀 My Pinned Projects
+Here are a few projects that showcase my skills in digital design, embedded systems, and low-level software development.
 
-🎓 <b>Computer Engineering Student</b> at <a href="https://www.ufc.br/">Federal University of Ceará (UFC)</a>  
-🔬 <b>Published Researcher</b> in Digital Design & Reliability
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://www.google.com/search?q=https://github.com/AlissonJSB4/8-bit-cpu-and-assembler-toolchain">🖥️ 8-bit CPU and Assembler Toolchain</a></h3>
+<p>A complete computer system ecosystem designed from scratch, featuring a custom 8-bit CPU in Verilog and a dedicated C++ assembler. This project demonstrates my understanding of computer architecture, RTL design, and hardware/software co-design.</p>
+<sub><b>Technologies:</b> Verilog, C++, Assembly, Computer Architecture, RTL Design</sub>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://www.google.com/search?q=https://github.com/AlissonJSB4/stm32-lora-telemetry-relay">📡 STM32 LoRa Telemetry Relay</a></h3>
+<p>A dual-node firmware project for STM32 boards that creates a long-range telemetry link using LoRa. It showcases my skills in embedded C, DMA, UART, state machines, and building event-driven, low-power systems.</p>
+<sub><b>Technologies:</b> C, STM32, LoRa, Embedded Systems, DMA, UART</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://www.google.com/search?q=https://github.com/AlissonJSB4/simple-os-x86">💿 Simple OS in Assembly</a></h3>
+<p>A 16-bit operating system for the x86 architecture, featuring a bootloader, kernel, and text editor. This project highlights my ability to work at the lowest software level, interacting directly with hardware via BIOS interrupts.</p>
+<sub><b>Technologies:</b> x86 Assembly, OS Development, Bootloader, Kernel</sub>
+</td>
+<td width="50%" valign="top">
+<!-- You can add a fourth project here in the future! -->
+</td>
+</tr>
+</table>
 
-> 📄 <b>Co-Author of:</b> <br>
-> <b>“Auto-Tuning Aging Sensor Validated Under Burn-In, Temperature, and Voltage Variations”</b>  
-> Accepted at <b>SBCCI 2025</b> – Sponsored by IEEE Circuits and Systems Society  
-> <i>
-> Developed and experimentally validated an on-chip, self-tuning aging sensor for long-term circuit reliability.  
-> Implemented on Artix-7 FPGA, the sensor tracks degradation under real-world stresses (temperature, voltage, burn-in), advancing Silicon Lifecycle Management (SLM).
-> </i>
+🏆 Academic Research & Contributions
+In addition to my project work, I have also contributed to academic research in the field of digital circuit reliability.
 
----
+📄 Co-Author of a research paper accepted at SBCCI 2025
 
-## 💡 Top Skills & Technologies
+Title: “Auto-Tuning Aging Sensor Validated Under Burn-In, Temperature, and Voltage Variations”
 
-- **HDLs:** Verilog, SystemVerilog, VHDL
-- **Core Concepts:** RTL Design, Digital Verification, Computer Architecture, RISC-V
-- **FPGA & Tools:** Vivado (AMD/Xilinx), Quartus (Intel)
-- **Languages:** C/C++, Python
-- **Specialized Research Skills:**  
-  On-Chip Aging Sensors, Silicon Lifecycle Management (SLM), FPGA-based Experimental Validation,  
-  Dynamic Phase Shifting (MMCM), Circuit Aging Effects (BTI, HCI)
+I contributed to the development and experimental validation of an on-chip, self-tuning aging sensor designed for long-term circuit reliability. My work involved implementing Verilog modules and Python automation scripts for the validation on an Artix-7 FPGA, advancing concepts in Silicon Lifecycle Management (SLM).
 
----
+💡 Core Competencies
+Hardware & RTL Design: Verilog, VHDL, Digital Logic, Computer Architecture, FPGA (Xilinx Vivado)
 
-## 🚀 Highlighted Projects
+Embedded Systems & Firmware: C, STM32 (HAL), LoRa, DMA, UART, State Machines
 
-### 🥇 Auto-Tuning Aging Sensor (Published Paper)
-- **Summary:** Co-developed a self-tuning sensor for monitoring circuit aging, validated on FPGA hardware.  
-- **Impact:** Enables real-time reliability tracking, supporting next-gen SLM strategies.  
-- **Recognition:** Accepted at SBCCI 2025 (IEEE) as a significant contribution in digital reliability.
+Low-Level Software & Tools: x86 Assembly, C++, Git, Linux Environment, Makefiles
 
-### 🖥️ 5-Stage Pipelined RISC-V Processor
-- **Description:** Implemented a RISC-V CPU in Verilog to master RTL design and architectural concepts.
+Key Concepts: HW/SW Co-design, Digital Verification, Circuit Reliability, On-Chip Sensors
 
-### 🧑‍💻 SystemVerilog Verification Environment
-- **Description:** Designed a testbench for RTL verification, showcasing modern digital verification methodologies.
-
----
-
-## 🌱 About Me
-
-I’m passionate about advancing digital design through both academic research and hands-on engineering. My mission is to build reliable, innovative hardware systems and contribute to the future of Silicon Lifecycle Management.
-
----
-
-## 📫 Connect with Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/alisson-jaime-28bb32216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
----
-
-<p align="center">
-  <em>“Published Researcher in Digital Design & Circuit Reliability | Verilog, SystemVerilog, FPGAs | On-Chip Sensors & Silicon Lifecycle Management (SLM)”</em>
-</p>
+📫 Let's Connect!
