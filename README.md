@@ -37,6 +37,7 @@ Here are a few projects that showcase my skills in digital design, embedded syst
 </table>
 
 🏆 Academic Research & Contributions
+
 In addition to my project work, I have also contributed to academic research in the field of digital circuit reliability.
 
 📄 Co-Author of a research paper accepted at SBCCI 2025
@@ -46,6 +47,7 @@ Title: “Auto-Tuning Aging Sensor Validated Under Burn-In, Temperature, and Vol
 I contributed to the development and experimental validation of an on-chip, self-tuning aging sensor designed for long-term circuit reliability. My work involved implementing Verilog modules and Python automation scripts for the validation on an Artix-7 FPGA, advancing concepts in Silicon Lifecycle Management (SLM).
 
 💡 Core Competencies
+
 Hardware & RTL Design: Verilog, VHDL, Digital Logic, Computer Architecture, FPGA (Xilinx Vivado)
 
 Embedded Systems & Firmware: C, STM32 (HAL), LoRa, DMA, UART, State Machines
