@@ -12,19 +12,19 @@ Here are a few projects that showcase my skills in digital design, embedded syst
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://www.google.com/search?q=https://github.com/alissonjsb4/8-bit-cpu-and-assembler-toolchain">🖥️ 8-bit CPU and Assembler Toolchain</a></h3>
+<h3><a href="https://github.com/alissonjsb4/8-bit-cpu-and-assembler-toolchain">🖥️ 8-bit CPU and Assembler Toolchain</a></h3>
 <p>A complete computer system ecosystem designed from scratch, featuring a custom 8-bit CPU in Verilog and a dedicated C++ assembler. This project demonstrates my understanding of computer architecture, RTL design, and hardware/software co-design.</p>
 <sub><b>Technologies:</b> Verilog, C++, Assembly, Computer Architecture, RTL Design</sub>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://www.google.com/search?q=https://github.com/alissonjsb4/stm32-lora-telemetry-relay">📡 STM32 LoRa Telemetry Relay</a></h3>
+<h3><a href="https://github.com/alissonjsb4/stm32-lora-telemetry-relay">📡 STM32 LoRa Telemetry Relay</a></h3>
 <p>A dual-node firmware project for STM32 boards that creates a long-range telemetry link using LoRa. It showcases my skills in embedded C, DMA, UART, state machines, and building event-driven, low-power systems.</p>
 <sub><b>Technologies:</b> C, STM32, LoRa, Embedded Systems, DMA, UART</sub>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://www.google.com/search?q=https://github.com/alissonjsb4/simple-os-x86">💿 Simple OS in Assembly</a></h3>
+<h3><a href="https://github.com/alissonjsb4/simple-os-x86">💿 Simple OS in Assembly</a></h3>
 <p>A 16-bit operating system for the x86 architecture, featuring a bootloader, kernel, and text editor. This project highlights my ability to work at the lowest software level, interacting directly with hardware via BIOS interrupts.</p>
 <sub><b>Technologies:</b> x86 Assembly, OS Development, Bootloader, Kernel</sub>
 </td>
