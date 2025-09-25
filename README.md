@@ -4,9 +4,11 @@ Computer Engineering Student passionate about the intersection of hardware and s
 </p>
 
 👨‍💻 About Me
+
 I'm a Computer Engineering student at the Federal University of Ceará (UFC) with a deep interest in building robust and efficient systems from the ground up. My passion lies in understanding the full stack, from designing digital logic in Verilog to writing low-level operating system code in Assembly. I am driven by the challenge of creating technology that is both powerful and reliable.
 
 🚀 My Pinned Projects
+
 Here are a few projects that showcase my skills in digital design, embedded systems, and low-level software development.
 
 <table width="100%">
