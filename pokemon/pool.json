@@ -1,0 +1,56 @@
+{
+  "tiers": {
+    "common":    {"weight": 50, "catch": 0.55, "label": ""},
+    "uncommon":  {"weight": 25, "catch": 0.40, "label": "UNCOMMON"},
+    "team":      {"weight": 13, "catch": 0.25, "label": "ON MY VGC TEAM"},
+    "partner":   {"weight": 7,  "catch": 0.45, "label": "MY PARTNER"},
+    "legendary": {"weight": 5,  "catch": 0.10, "label": "LEGENDARY"}
+  },
+  "pokemon": [
+    {"id": 133,   "name": "Eevee",             "tier": "common"},
+    {"id": 129,   "name": "Magikarp",          "tier": "common"},
+    {"id": 54,    "name": "Psyduck",           "tier": "common"},
+    {"id": 92,    "name": "Gastly",            "tier": "common"},
+    {"id": 63,    "name": "Abra",              "tier": "common"},
+    {"id": 194,   "name": "Wooper",            "tier": "common"},
+    {"id": 333,   "name": "Swablu",            "tier": "common"},
+    {"id": 403,   "name": "Shinx",             "tier": "common"},
+    {"id": 396,   "name": "Starly",            "tier": "common"},
+    {"id": 172,   "name": "Pichu",             "tier": "common"},
+    {"id": 999,   "name": "Gimmighoul",        "tier": "common"},
+    {"id": 810,   "name": "Grookey",           "tier": "common"},
+    {"id": 10229, "name": "Hisuian Growlithe", "tier": "common"},
+    {"id": 728,   "name": "Popplio",           "tier": "common"},
+    {"id": 607,   "name": "Litwick",           "tier": "common"},
+    {"id": 744,   "name": "Rockruff",          "tier": "common"},
+    {"id": 831,   "name": "Wooloo",            "tier": "common"},
+    {"id": 957,   "name": "Tinkatink",         "tier": "common"},
+
+    {"id": 25,    "name": "Pikachu",           "tier": "uncommon"},
+    {"id": 448,   "name": "Lucario",           "tier": "uncommon"},
+    {"id": 94,    "name": "Gengar",            "tier": "uncommon"},
+    {"id": 143,   "name": "Snorlax",           "tier": "uncommon"},
+    {"id": 197,   "name": "Umbreon",           "tier": "uncommon"},
+    {"id": 700,   "name": "Sylveon",           "tier": "uncommon"},
+    {"id": 445,   "name": "Garchomp",          "tier": "uncommon"},
+    {"id": 887,   "name": "Dragapult",         "tier": "uncommon"},
+    {"id": 609,   "name": "Chandelure",        "tier": "uncommon"},
+    {"id": 282,   "name": "Gardevoir",         "tier": "uncommon"},
+
+    {"id": 398,   "name": "Staraptor",         "tier": "team"},
+    {"id": 26,    "name": "Raichu",            "tier": "team"},
+    {"id": 1000,  "name": "Gholdengo",         "tier": "team"},
+    {"id": 812,   "name": "Rillaboom",         "tier": "team"},
+    {"id": 10230, "name": "Hisuian Arcanine",  "tier": "team"},
+    {"id": 730,   "name": "Primarina",         "tier": "team"},
+
+    {"id": 501,   "name": "Oshawott",          "tier": "partner"},
+    {"id": 393,   "name": "Piplup",            "tier": "partner"},
+
+    {"id": 150,   "name": "Mewtwo",            "tier": "legendary"},
+    {"id": 384,   "name": "Rayquaza",          "tier": "legendary"},
+    {"id": 249,   "name": "Lugia",             "tier": "legendary"},
+    {"id": 487,   "name": "Giratina",          "tier": "legendary"},
+    {"id": 382,   "name": "Kyogre",            "tier": "legendary"}
+  ]
+}

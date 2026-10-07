@@ -1,136 +1,55 @@
-<h1 align="center">Alisson Jaime</h1>
-
 <p align="center">
-  <b>Engenharia de Computação — UFC · Fortaleza, Brasil</b><br>
-  Construo sistemas de ponta a ponta: do circuito ao pipeline de dados que mede o circuito.
+  <img src="assets/banner.gif" width="100%" alt="Alisson Jaime: RTL, FPGA, RISC-V, radiation testing">
 </p>
 
----
+I'm a computer engineering student at the Federal University of Ceará, in Fortaleza, Brazil, graduating in 2027. I work on digital hardware and on how it fails: RTL in SystemVerilog, RISC-V systems-on-chip on FPGA, synthesis in Cadence Genus, and the Python that runs the test bench.
 
-## Sobre
+## Research
 
-Trabalho nas duas pontas da mesma linha. Projeto hardware — RTL, FPGA, firmware — e
-escrevo o software que valida, automatiza e analisa o que esse hardware produz. A
-maior parte dos meus projetos vive no encontro dos dois: uma bancada de teste
-controlada por Python, um modelo de ML rodando embarcado, um pipeline que cruza
-séries de sensores para achar divergência.
+Since January 2025 I've been a research assistant at LESC, the computer systems lab at UFC, in a collaboration with IHP Microelectronics (Germany) on ageing and radiation effects.
 
-Gosto especialmente de **automação com propósito** — sistema que roda sozinho,
-guarda a série histórica e só chama sua atenção quando tem motivo.
+- On-chip ageing sensors in SystemVerilog for the PULP Croc RISC-V SoC. They measure timing-slack loss through MMCM phase shifts, with instances in the core, the OBI crossbar, the bus demux and the UART.
+- Radiation mitigation for a proton campaign at PARTREC, Groningen, in April 2026 (RADNEXT transnational access): configuration-memory scrubbing with the Xilinx SEM IP, BRAM ECC and a UART arbiter for the CPU, scrubber and telemetry streams. I ran the first night shift remotely from Fortaleza and wrote the campaign reports.
+- Python and SCPI automation for burn-in between 33 and 125 °C, which cut each characterisation campaign by about 40%.
 
-Hoje sou bolsista de P&D em projeto financiado pela **EMBRAPII/SEBRAE**, coautor de
-artigos publicados no **IEEE**, e fundador e presidente do capítulo **IEEE CASS** da UFC.
+The lab repositories are private. What's public is below.
 
----
+## Papers
 
-## Software, dados e automação
+- A. J. S. Barros et al. A CEM43-Driven RTL Thermal Governor with Selective AXI4-Stream Throttle for Biomedical FPGA Wearables. IEEE LASCAS 2027, under review. First author.
+- D. Alencar, A. Barros et al. Quantifying the Effect of Burn-In Thermal Control on Delivered Acceleration Factor and On-Chip Slack-Sensor Fidelity in an FPGA Target. IEEE SBCCI 2026. Invited for an extended version in IEEE Design & Test.
+- L. Nogueira, M. Filho, D. Alencar, A. Barros et al. Auto-Tuning Aging Sensor Validated Under Burn-In, Temperature, and Voltage Variations. IEEE SBCCI 2025.
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/flight-watch">flight-watch</a></h3>
-<p>Monitor de preços que roda de hora em hora, guarda a série histórica e notifica
-apenas quando o preço atravessa uma faixa. <b>636 execuções autônomas e 5 alertas
-enviados</b> — a supressão de ruído é o ponto do projeto.</p>
-<sub><b>Stack:</b> Python · Playwright · pandas · API do Telegram · agendamento</sub>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/ecg-anomaly-detection">ecg-anomaly-detection</a></h3>
-<p>Detector de batimentos anômalos treinado <b>só com exemplos normais</b>.
-Mahalanobis, PCA e métricas escritos do zero em NumPy — sem scikit-learn.
-<b>F1 0,944 e AUC 0,962</b>, reproduzível em 13 segundos.</p>
-<sub><b>Stack:</b> Python · NumPy · SciPy · pandas · matplotlib</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/pdi-deteccao-placas-esp32">pdi-deteccao-placas-esp32</a></h3>
-<p>Detecção de placas veiculares com <b>MobileNetV1 rodando embarcado</b> num
-ESP32-S3. Treinamento em Python, inferência em C++ dentro do microcontrolador — ML
-onde a memória é medida em kilobytes.</p>
-<sub><b>Stack:</b> Python · TensorFlow · C++ · ESP32-S3</sub>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/biruleibe">biruleibe</a></h3>
-<p>Aplicação web em Streamlit para gerenciar ficha de RPG — estado persistido em
-JSON, interface própria. Utilitário pequeno, feito porque eu precisava dele.</p>
-<sub><b>Stack:</b> Python · Streamlit</sub>
-</td>
-</tr>
-</table>
+## Projects
 
-## Hardware e sistemas de baixo nível
+Hardware and low level
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/8-bit-cpu-and-assembler-toolchain">CPU de 8 bits + toolchain</a></h3>
-<p>Um computador inteiro do zero: CPU de 8 bits com ISA própria em Verilog e o
-assembler correspondente em C++. Arquitetura de computadores, projeto RTL e
-co-design hardware/software na mesma peça.</p>
-<sub><b>Stack:</b> Verilog · C++ · Assembly</sub>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/simple-os-x86">simple-os-x86</a></h3>
-<p>Sistema operacional de 16 bits para x86 escrito em Assembly — bootloader, kernel
-e editor de texto, conversando direto com o hardware via interrupções de BIOS.</p>
-<sub><b>Stack:</b> x86 Assembly</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/stm32-lora-telemetry-relay">stm32-lora-telemetry-relay</a></h3>
-<p>Firmware de dois nós STM32 formando um enlace de telemetria de longo alcance por
-LoRa, com captura UART por DMA e validação por máquina de estados.</p>
-<sub><b>Stack:</b> C · STM32 HAL · LoRa · DMA</sub>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/alissonjsb4/Jardins-de-Acacio-irrigacao-automatica">Jardins de Acácio</a></h3>
-<p>Irrigação automatizada do laboratório: controle em Python, comunicação Wi-Fi por
-ESP8266 e acionamento por STM32.</p>
-<sub><b>Stack:</b> C · Python · ESP8266 · STM32</sub>
-</td>
-</tr>
-</table>
+- [8-bit-cpu-and-assembler-toolchain](https://github.com/alissonjsb4/8-bit-cpu-and-assembler-toolchain): 8-bit RISC CPU with a 16-instruction ISA and a pipelined datapath with hazard detection, in Verilog, plus its two-pass assembler in C++.
+- [simple-os-x86](https://github.com/alissonjsb4/simple-os-x86): 16-bit operating system for x86 in Assembly, with bootloader, kernel and a text editor.
+- [stm32-lora-telemetry-relay](https://github.com/alissonjsb4/stm32-lora-telemetry-relay): two STM32 nodes relaying radiosonde telemetry over LoRa, with circular-DMA UART capture and checksum validation in a state machine.
 
-## Pesquisa e desenvolvimento
+Software and data
 
-**Publicações**
+- [ecg-anomaly-detection](https://github.com/alissonjsb4/ecg-anomaly-detection): ECG anomaly detection trained only on normal beats. Mahalanobis distance and PCA written from scratch in NumPy, F1 0.944 and AUC 0.962, reproducible in 13 seconds.
+- [pdi-deteccao-placas-esp32](https://github.com/alissonjsb4/pdi-deteccao-placas-esp32): licence-plate detection with MobileNetV1 running on an ESP32-S3. Training in Python, inference in C++ on the microcontroller.
+- [flight-watch](https://github.com/alissonjsb4/flight-watch): airfare monitor that runs unattended and only sends an alert when the price changes band.
 
-- Coautor — *Auto-Tuning Aging Sensor Validated Under Burn-In, Temperature and Voltage Variations*, **IEEE SBCCI 2025** (IEEE Xplore)
-- Coautor — **IEEE SBCCI 2026** (aceito)
-- Primeiro autor — submissão ao **IEEE BioCAS 2026**, em avaliação
+## Elsewhere
 
-**Projetos**
+I founded and chair the IEEE Circuits and Systems Society student chapter at UFC. Outside the lab I play competitive Pokémon (VGC), which is why there's a wild one at the bottom of this page.
 
-- **Bolsista de desenvolvimento — QHydro** (LESC/UFC, financiado por EMBRAPII/SEBRAE): firmware de estação IoT autônoma com fila store-and-forward, telemetria MQTT e atualização remota
-- **Iniciação científica em confiabilidade de circuitos**, em colaboração com a IHP Microelectronics (Alemanha): automação de bancada por SCPI e pipeline de validação de dados
+alissonjsb4@gmail.com · [LinkedIn](https://www.linkedin.com/in/alissonjsb4)
 
-**Liderança**
+## Catch one
 
-- Fundador e presidente — **IEEE CASS, Capítulo UFC**: equipe de 10+ pessoas, workshops técnicos para 50+ estudantes, organização do 1º IEEE Latin-American Symposium on IoT
-- Diretor — Clube do Hardware UFC
-- **Semifinalista do Prêmio Na Prática (Fundação Estudar)** — top 100 entre 8.000+ inscritos
-
----
-
-## Stack
-
-**Linguagens** — Python · C/C++ · SQL · Java · Bash · Verilog/SystemVerilog · Assembly
-
-**Dados e automação** — pandas · NumPy · SciPy · Playwright · ETL e junção temporal de séries · APIs REST · MQTT · object storage S3
-
-**Infra** — Linux (systemd, deploy de serviços) · Git · agendamento de jobs
-
-**Hardware** — FPGA (Xilinx Vivado) · STM32 · ESP32 · Raspberry Pi
-
----
-
+<!-- pokemon:start -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/alissonjsb4">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" alt="LinkedIn">
-  </a>
-  <a href="mailto:alissonjsb4@gmail.com">
-    <img src="https://img.shields.io/badge/e--mail-D14836?logo=gmail&logoColor=white&style=for-the-badge" alt="E-mail">
-  </a>
+  <img src="pokemon/encounter-1.gif" width="600" alt="A wild Oshawott appeared">
 </p>
+<p align="center">
+  <a href="https://github.com/alissonjsb4/alissonjsb4/issues/new?title=pokemon%7Cthrow&body=Just%20submit%20this%20issue.%20A%20GitHub%20Action%20plays%20the%20move%2C%20replies%20here%20and%20updates%20the%20profile%20in%20about%20a%20minute.">Throw a Poké Ball</a> &nbsp;·&nbsp; <a href="https://github.com/alissonjsb4/alissonjsb4/issues/new?title=pokemon%7Crun&body=Just%20submit%20this%20issue.%20A%20GitHub%20Action%20plays%20the%20move%2C%20replies%20here%20and%20updates%20the%20profile%20in%20about%20a%20minute.">Run</a>
+</p>
+<p align="center"><sub>Each link opens an issue with the move in the title. Submit it and a GitHub Action rolls the throw, replies in the issue and updates this page in about a minute. Poké Balls left for this one: 3.</sub></p>
+
+<p align="center"><sub>No Poké Balls thrown yet. Sprites from PokéAPI.</sub></p>
+<!-- pokemon:end -->

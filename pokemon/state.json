@@ -1,0 +1,17 @@
+{
+  "encounter": {
+    "n": 1,
+    "id": 501,
+    "name": "Oshawott",
+    "tier": "partner",
+    "shiny": false,
+    "balls": 3
+  },
+  "caught": [],
+  "stats": {
+    "throws": 0,
+    "caught": 0,
+    "fled": 0,
+    "trainers": []
+  }
+}

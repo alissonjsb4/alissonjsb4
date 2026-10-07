@@ -1,0 +1,64 @@
+# Plays the wild Pokémon encounter at the bottom of README.md.
+# Someone opens an issue titled "pokemon|throw" or "pokemon|run" (the links in the
+# README prefill it); this job plays the move, commits the new state and answers
+# in the issue. Titles go through env vars only, never straight into the shell.
+name: pokemon
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pokemon
+  cancel-in-progress: false
+
+jobs:
+  play:
+    if: github.event.issue.title == 'pokemon|throw' || github.event.issue.title == 'pokemon|run'
+    runs-on: ubuntu-latest
+    env:
+      TITLE: ${{ github.event.issue.title }}
+      TRAINER: ${{ github.event.issue.user.login }}
+      NUMBER: ${{ github.event.issue.number }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      # main, not the event's commit: a queued job has to see the previous move.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow==11.3.0
+
+      - name: Play
+        run: python pokemon/game.py "${TITLE#pokemon|}" "$TRAINER" > "$RUNNER_TEMP/reply.md"
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A README.md pokemon
+          git commit -m "pokemon: ${TITLE#pokemon|} by $TRAINER (#$NUMBER)"
+          for attempt in 1 2 3; do
+            git push && break
+            git pull --rebase origin main
+          done
+
+      - name: Reply
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/reply.md"
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"
+
+      - name: Reply on failure
+        if: failure()
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" \
+            --body "Something went wrong with this move, sorry. Try again in a few minutes."
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"
