@@ -1,17 +1,27 @@
 {
   "encounter": {
-    "n": 1,
-    "id": 501,
-    "name": "Oshawott",
-    "tier": "partner",
+    "n": 2,
+    "id": 396,
+    "name": "Starly",
+    "tier": "common",
     "shiny": false,
     "balls": 3
   },
-  "caught": [],
+  "caught": [
+    {
+      "id": 501,
+      "name": "Oshawott",
+      "shiny": false,
+      "trainer": "alissonjsb4",
+      "date": "2026-10-07"
+    }
+  ],
   "stats": {
-    "throws": 0,
-    "caught": 0,
+    "throws": 1,
+    "caught": 1,
     "fled": 0,
-    "trainers": []
+    "trainers": [
+      "alissonjsb4"
+    ]
   }
 }
