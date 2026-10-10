@@ -1,16 +1,24 @@
 {
   "encounter": {
-    "n": 1,
-    "id": 501,
-    "name": "Oshawott",
-    "tier": "partner",
+    "n": 2,
+    "id": 150,
+    "name": "Mewtwo",
+    "tier": "legendary",
     "shiny": false,
-    "balls": 1
+    "balls": 3
   },
-  "caught": [],
+  "caught": [
+    {
+      "id": 501,
+      "name": "Oshawott",
+      "shiny": false,
+      "trainer": "alissonjsb4",
+      "date": "2026-10-10"
+    }
+  ],
   "stats": {
-    "throws": 2,
-    "caught": 0,
+    "throws": 3,
+    "caught": 1,
     "fled": 0,
     "trainers": [
       "alissonjsb4"

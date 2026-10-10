@@ -44,12 +44,18 @@ alissonjsb4@gmail.com · [LinkedIn](https://www.linkedin.com/in/alissonjsb4)
 
 <!-- pokemon:start -->
 <p align="center">
-  <img src="pokemon/encounter-1.gif" width="600" alt="A wild Oshawott appeared">
+  <img src="pokemon/encounter-2.gif" width="600" alt="A wild Mewtwo appeared">
 </p>
 <p align="center">
   <a href="https://github.com/alissonjsb4/alissonjsb4/issues/new?title=pokemon%7Cthrow&body=Just%20submit%20this%20issue.%20A%20GitHub%20Action%20plays%20the%20move%2C%20replies%20here%20and%20updates%20the%20profile%20in%20about%20a%20minute.">Throw a Poké Ball</a> &nbsp;·&nbsp; <a href="https://github.com/alissonjsb4/alissonjsb4/issues/new?title=pokemon%7Crun&body=Just%20submit%20this%20issue.%20A%20GitHub%20Action%20plays%20the%20move%2C%20replies%20here%20and%20updates%20the%20profile%20in%20about%20a%20minute.">Run</a>
 </p>
-<p align="center"><sub>Each link opens an issue with the move in the title. Submit it and a GitHub Action rolls the throw, replies in the issue and updates this page in about a minute. Poké Balls left for this one: 1.</sub></p>
+<p align="center"><sub>Each link opens an issue with the move in the title. Submit it and a GitHub Action rolls the throw, replies in the issue and updates this page in about a minute. Poké Balls left for this one: 3.</sub></p>
 
-<p align="center"><sub>0 caught, 0 fled, 2 Poké Balls thrown by 1 trainer. Sprites from PokéAPI.</sub></p>
+Recently caught
+
+| | Pokémon | Trainer | Date |
+|---|---|---|---|
+| <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/501.gif" height="40" alt=""> | Oshawott | [@alissonjsb4](https://github.com/alissonjsb4) | 2026-10-10 |
+
+<p align="center"><sub>1 caught, 0 fled, 3 Poké Balls thrown by 1 trainer. Sprites from PokéAPI.</sub></p>
 <!-- pokemon:end -->
