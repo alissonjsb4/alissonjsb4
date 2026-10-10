@@ -5,11 +5,11 @@
     "name": "Oshawott",
     "tier": "partner",
     "shiny": false,
-    "balls": 2
+    "balls": 1
   },
   "caught": [],
   "stats": {
-    "throws": 1,
+    "throws": 2,
     "caught": 0,
     "fled": 0,
     "trainers": [
